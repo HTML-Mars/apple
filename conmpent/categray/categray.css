@@ -1,0 +1,174 @@
+.head{
+    width: 100%;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #FFD600;
+    position: fixed;
+}
+.contain{
+    margin-top:5.6rem;
+    height:89%;
+}
+.contain_lf{
+    float: left;
+    width:20%;
+    height:100%;
+    background: #F8F8F8;
+}
+.contain_lf ul{
+    height:100%;
+    overflow: auto;
+}
+.contain_lf li{
+    line-height:4rem;
+    text-align: center;
+}
+.contain_rg{
+    float: left;
+    width:76%;
+    height:100%;
+    margin: 0px 2%;
+}
+.contain_rg_u{
+    /*position: fixed;*/
+    float: left;
+    width: 100%;
+    /*height: 4rem;*/
+    line-height: 4rem;
+}
+.none{
+    width:100%;
+    background: red;
+}
+/*.classify_m{*/
+    /*width:100%;*/
+    /*!*display: none;*!*/
+/*}*/
+/*.sort_m{*/
+    /*width:100%;*/
+    /*!*display: none;*!*/
+/*}*/
+.as{
+    font-size: 1.2rem;
+    float: left;
+    border: solid 1px #e0e0e0;
+    line-height: 2rem;
+    padding: .4rem .8rem;
+    margin-left: .8rem;
+    margin-top: .8rem;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+.rg_head{
+    overflow: hidden;
+    width:100%;
+}
+.classify{
+    width:50%;
+    float: left;
+    height: 4rem;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    background: url("../../img/xia.png") no-repeat 80% center;
+    background-size:1.2rem,1.2rem;
+}
+.sort{
+    width:50%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    background: url("../../img/xia.png") no-repeat 80% center;
+    background-size:1.2rem,1.2rem;
+}
+.contain_rg_b{
+    margin-top:4rem;
+    width:100%;
+    height:89%;
+}
+.contain_rg_b ul{
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+.contain_rg_b ul li{
+    width:100%;
+    border-bottom: 1px solid gray;
+}
+.contain_rg_b ul li div{
+    background: #fff;
+}
+.tt{
+    width:100%;
+    overflow: hidden;
+}
+.lf{
+    width:8rem;
+    float: left;
+}
+.lf img{
+    width:100%;
+}
+.rg{
+    width:12rem;
+    padding-left: 1rem;
+    float: left;
+    position: relative;
+    padding-top: 1rem;
+}
+.p1{
+    width:90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.price{
+    color: red;
+}
+.sec{
+    overflow: hidden;
+}
+.choose{
+    float: left;
+    width:40px;
+    height:20px;
+    line-height:20px;
+    border-radius: 4px;
+    border:1px solid red;
+    text-align: center;
+    color: red;
+}
+.discount{
+    float: left;
+    width:70px;
+    height:20px;
+    line-height:20px;
+    border-radius: 4px;
+    border:1px solid red;
+    text-align: center;
+    color: #fff;
+    background: red;
+}
+.add{
+    height:20px;
+    width:20px;
+    font-size: 16px;
+    color: red;
+    border-radius: 50%;
+    border:1px solid red;
+    line-height:20px;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.active{
+    width:100%;
+    display: block;
+}
+.inactive{
+    width:100%;
+    display: none;
+}

@@ -1,0 +1,49 @@
+#wrap{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+#container{
+    height:90%;
+    width:100%;
+    overflow: auto;
+    background: #EFEFEF;
+    font-size: 14px;
+}
+#tab{
+    height:10%;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    background: #F6F6F6;
+
+}
+#tab ul{
+    height:100%;
+    border-top:1px solid gray;
+}
+#tab li{
+    height:100%;
+    width:25%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+#tab li a{
+    height:100%;
+    width:100%;
+    font-size: 16px;
+    display: block;
+}
+i{
+    width:25px;
+    display: block;
+    height:25px;
+    margin:5px auto;
+}
+i>img{
+    width:100%;
+    display: block;
+    height:100%;
+}

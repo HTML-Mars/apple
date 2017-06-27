@@ -1,0 +1,52 @@
+<div class="head">驼房营路附近</div>
+<div class="contain">
+    <div class="contain_lf">
+        <ul>
+            <li ng-repeat="item in arr1">
+                <span ng-click="chang(item.id,$index)" ng-init="change(104749)">{{item.name}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="contain_rg">
+        <div class="contain_rg_u">
+            <div class="rg_head">
+                <div class="classify" ng-click="show()">全部分类</div>
+                <div class="sort" ng-click="show1()">综合排序</div>
+            </div>
+            <div class="none">
+                <div ng-class="{true:'active',false:'inactive'}[isActive1]">
+                    <a ng-repeat="item in arrs" class="as" ng-click="reset(item.id)">{{item.name}}</a>
+                    <!--+item.id-->
+                </div>
+                <div ng-class="{true:'active',false:'inactive'}[isActive2]" >
+                    <a class="as">综合排序</a>
+                    <a class="as" ng-click="sort('product_num')">销量最高</a>
+                    <a class="as" ng-click="sort('-partner_price')">价格最高</a>
+                    <a class="as" ng-click="sort('partner_price')">价格最低</a>
+                </div>
+            </div>
+        </div>
+        <div class="contain_rg_b">
+            <ul>
+                <li ng-repeat="item in arrt | orderBy:order">
+                    <div class="tt" ng-if="act">
+                        <div class="lf">
+                            <img src="{{item.img}}" alt="">
+                            <!--<p>{{item.child_cid}}</p>-->
+                        </div>
+                        <div class="rg">
+                            <p class="p1">{{item.name}}</p>
+                            <div class="sec">
+                                <p class="choose">精选</p>
+                                <p class="discount">买一赠一</p>
+                            </div>
+                            <p>{{item.specifics}}</p>
+                            <p class="price">{{"￥"+item.partner_price+"元"}}</p>
+                            <p class="add">+</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="head">驼房营路附近</div>
+<div class="total">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in arr">
+                <img src="{{item.activity.img}}" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="part1">
+    <div  ng-repeat="item in arr1">
+        <img src="{{item.activity.img}}" alt="">
+        <p>{{item.activity.name}}</p>
+    </div>
+</div>
+<div class="part2">
+    <div  ng-repeat="item in arr2">
+        <img src="{{item.activity.img}}" alt="" />
+    </div>
+</div>
+<div class="part3">
+    <div  ng-repeat="item in arr3">
+        <img src="{{item.chead_detail.img}}" alt="" />
+    </div>
+</div>
+<div class="part4">
+    <div  ng-repeat="item in arr4">
+        <img src="{{item.cactivity_detail.img}}" alt="" />
+    </div>
+</div>
+<div class="part5">
+    <div  ng-repeat="item in arr5">
+        <img src="{{item.cicons_detail.img}}" alt="" />
+    </div>
+</div>
+<div class="part6">
+    <div  ng-repeat="item in arr6">
+        <img src="{{item.activity.img}}" alt="" />
+    </div>
+</div>
+<div class="part7" ng-repeat="item in arr7">
+    <div>
+        <div class="one">
+        <img src="{{item.activity.img}}" alt="" />
+        <!--<p>{{item.category_detail.name}}</p>-->
+        <!--<p>{{arr7[$index].category_detail.goods}}</p>-->
+        </div>
+        <div class="two">
+        <div ng-repeat="item1 in arr7[$index].category_detail.goods">
+            <img src="{{item1.img}}" alt="" />
+            <p class="p1">{{item1.name}}</p>
+            <p class="choose">精选</p>
+            <p class="discount">买一赠一</p>
+            <p>{{item1.specifics}}</p>
+            <p class="price">{{"￥"+item1.partner_price+"元"}}</p>
+            <p class="add">+</p>
+        </div>
+        </div>
+    </div>
+</div>

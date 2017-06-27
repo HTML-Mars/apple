@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+    <script src="js/angular-css.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="conmpent/home/home.js"></script>
+    <script src="conmpent/categray/categray.js"></script>
+    <script src="conmpent/shopcar/shopcar.js"></script>
+    <script src="conmpent/mine/mine.js"></script>
+</head>
+<body ng-app="routingDemoApp">
+<div id="wrap">
+    <div id="container" ng-view></div>
+    <div id="tab">
+        <ul>
+            <li><a ng-click="change()" href="#/home"><i><img src="img/home.png" alt=""></i>首页</a></li>
+            <li><a ng-click="change()" href="#/categray"><i><img src="img/shop.png" alt=""></i>闪送超市</a></li>
+            <li><a ng-click="change()" href="#/shopcar"><i><img src="img/shopcar.png" alt=""></i>购物车</a></li>
+            <li><a ng-click="change()" href="#/mine"><i><img src="img/mine.png" alt=""></i>我的</a></li>
+        </ul>
+    </div>
+</div>
+    <script>
+        document.documentElement.style.fontsize=innerWidth/10+"px";
+        window.onresize=function(){
+            document.documentElement.style.fontsize=innerWidth/10+"px";
+        }
+    </script>
+</body>
+</html>
